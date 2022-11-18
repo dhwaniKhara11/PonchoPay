@@ -56,7 +56,7 @@ The only prerequisite to run the below program is to have yarn installed.
 
 1. Clone the repository
    ```sh
-   git clone https://erbenschell.iese.fraunhofer.de/tbsd_ss21/various_tbsd21.git
+   git clone https://github.com/dhwaniKhara11/PonchoPay.git
    ```
 2. Install dependencies
    ```sh
