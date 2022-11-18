@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Sample task for PonchoPay"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <title>Poncho Pay</title>
+  </head>
+  <body>
+    <noscript>Javascript should be enabled to use this application.</noscript>
+    <div id="root"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Swiper('.swiper-container', {
+          loop: true,
+          slidesPerView: 1,
+          spaceBetween: 32,
+          autoplay: {
+            delay: 8000,
+          },
+          breakpoints: {
+            640: {
+              centeredSlides: true,
+              slidesPerView: 1.25,
+            },
+            1024: {
+              centeredSlides: false,
+              slidesPerView: 1.5,
+            },
+          },
+          navigation: {
+            nextEl: '.next-button',
+            prevEl: '.prev-button',
+          },
+        })
+      })
+    </script>
+  </body>
+</html>
